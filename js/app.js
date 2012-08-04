@@ -31,5 +31,22 @@
     // $('.block-grid.four-up>li:nth-child(4n+1)').css({clear: 'left'});
     // $('.block-grid.five-up>li:nth-child(5n+1)').css({clear: 'left'});
   });
+
+
+  $('#bio, #tracks, #contact').css({'backgroundSize': 'cover'});
+
   
+
+    $('.arrow').click(function(){
+        var direction = $(this).attr('data-direction');
+        var CF = ContentFlowGlobal.Flows[0];
+        if(direction === "left"){
+            CF.moveTo('pre')
+        }
+        else if (direction === "right") {
+            CF.moveTo('next');
+        }
+        
+    });
+
 })(jQuery);

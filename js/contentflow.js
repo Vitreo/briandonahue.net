@@ -1497,13 +1497,6 @@ ContentFlow.prototype = {
             }
         }
 
-        // Container object
-        
-        $(function(){
-            $('#prev, #next').click(function(e){
-                
-            })
-        })
         // key strokes
         var key = this._keyStroke.bind(this);
         if (this.conf.keys && !this.Browser.iPhone) {
@@ -1531,7 +1524,7 @@ ContentFlow.prototype = {
                this.Container.onkeydown = key;
             }
         }
-
+        // arrows
 
         // Flow object
         if (this.conf.flowDragFriction > 0) {
