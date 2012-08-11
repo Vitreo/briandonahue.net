@@ -33,7 +33,7 @@
   });
 
 
-  $('#bio, #tracks, #contact').css({'backgroundSize': 'cover'});
+  $('#bio, #tracks').css({'backgroundSize': 'cover'});
 
   
 
@@ -48,5 +48,14 @@
         }
         
     });
+
+
+            $('header a').click(function(e){
+                e.preventDefault();
+                var el = $(this).attr('href').toString();
+                 $('html, body').animate({
+                  scrollTop: $(el).offset().top
+                }, 500);
+            });    
 
 })(jQuery);

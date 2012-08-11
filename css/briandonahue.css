@@ -76,7 +76,6 @@ div#bio:after{
 
 #contact{
     background-image: url('../img/bg3.jpg');
-    background-size: cover;
     padding-bottom:40px;
     border-bottom: 20px solid;
     
@@ -182,12 +181,16 @@ label{
 
 
 .arrow{
-    font-size:30px;
+    font-size:40px;
     color:white;
 }
 
+.icon-right-open{
+    float:right;
+}
 
-header a, .arrows {
+
+header a, .arrows{
     font-size:20px;
     color:white;
     line-height:35px;
