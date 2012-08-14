@@ -186,6 +186,10 @@ label{
     color:white;
 }
 
+.arrow.icon-right-open{
+float:right
+}
+
 
 header a, .arrows {
     font-size:20px;
